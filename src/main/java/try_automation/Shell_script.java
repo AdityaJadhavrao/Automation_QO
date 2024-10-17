@@ -14,7 +14,8 @@ public class Shell_script extends BaseClass{
 	{
 		{
 			String projectDir = System.getProperty("user.dir");
-			String scriptPath = projectDir+"";
+			String scriptPath = projectDir+"Specify the name of your shell script to be executed";
+			System.out.println("Script path has not been specified");
 			
 			ProcessBuilder processbuilder = new ProcessBuilder("/bin/bash",scriptPath);
 			Process process = processbuilder.start();
