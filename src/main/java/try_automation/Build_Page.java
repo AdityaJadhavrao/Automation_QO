@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeMethod;
 
 public class Build_Page extends BaseClass{
 
-    static int index=1;
+    static int index=0;
 	@BeforeMethod
 	public void build() throws InterruptedException
 	{

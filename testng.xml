@@ -5,6 +5,8 @@
     <classes>
       <class name="automation_Test.Automationtest"/>
       <class name="try_automation.BaseClass"/>
+      <class name="try_automation.Build_Page"/>
+       <class name="try_automation.Shell_script"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
