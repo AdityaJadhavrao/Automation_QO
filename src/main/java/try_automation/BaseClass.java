@@ -44,7 +44,7 @@ static protected WebDriver driver;
 		
         // Set up WebDriver using WebDriverManager
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
 
         driver.manage().window().maximize();
         
