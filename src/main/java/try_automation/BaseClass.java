@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
@@ -30,6 +31,16 @@ static protected WebDriver driver;
 		
 		String username = prop.getProperty("username");
 		String password = prop.getProperty("password");
+
+		//Can be deleted if not neccessary
+
+		ChromeOptions options = new ChromeOptions();
+		// Omit headless mode
+		// options.addArguments("--headless"); // Do not add this line
+
+		options.addArguments("--disable-gpu"); // Optional: Disable GPU hardware acceleration
+		options.addArguments("--no-sandbox"); // Optional: Bypass OS security model, but use cautiously
+		options.addArguments("--remote-allow-origins=*"); // Optional: Allow access to localhost
 		
         // Set up WebDriver using WebDriverManager
         WebDriverManager.chromedriver().setup();
