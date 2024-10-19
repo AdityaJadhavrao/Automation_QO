@@ -7,6 +7,7 @@
         <methods>
           <include name="setUp"/>
           <include name="build"/>
+          <include name="execute_shell_script"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- automation_Test.Automationtest -->

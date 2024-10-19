@@ -1,17 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: automation_Test.Automationtest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 41.38 s <<< FAILURE! - in automation_Test.Automationtest
-build(automation_Test.Automationtest)  Time elapsed: 7.189 s  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1pjrb3v" href="https://quickoffice-internal.googlesource.com/html-office/+/...2d3b1b15262545373333d3939f7f713">6b5f75361</a> is not clickable at point (725, 201). Other element would receive the click: <p>...</p>
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 21.724 s <<< FAILURE! - in automation_Test.Automationtest
+setUp(automation_Test.Automationtest)  Time elapsed: 21.6 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@aria-label='Email or phone']"}
   (Session info: chrome=129.0.6668.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-122-generic', java.version: '17.0.12'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-124-generic', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [42171eed2ccc20c8a57b8b0aaab96d8f, clickElement {id=f.62361C49C0E87E3E0C5CF541F05E7549.d.E30306D7F093FD62EEC36AFBF932D31C.e.52}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.100, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39989}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39989/devtoo..., se:cdpVersion: 129.0.6668.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (42171eed2ccc20c8a57b8b0aaab96d8f)] -> xpath: //tbody/tr/td/a]
-Session ID: 42171eed2ccc20c8a57b8b0aaab96d8f
-	at automation_Test.Automationtest.build(Automationtest.java:21)
+Command: [2493d9b3d04ade4d7905c547636933f4, findElement {using=xpath, value=//input[@aria-label='Email or phone']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.100, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42657}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:42657/devtoo..., se:cdpVersion: 129.0.6668.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2493d9b3d04ade4d7905c547636933f4
 
