@@ -36,7 +36,7 @@ static protected WebDriver driver;
 
 		ChromeOptions options = new ChromeOptions();
 		// Omit headless mode
-		// options.addArguments("--headless"); // Do not add this line
+		 options.addArguments("--headless"); // Do not add this line
 
 		options.addArguments("--disable-gpu"); // Optional: Disable GPU hardware acceleration
 		options.addArguments("--no-sandbox"); // Optional: Bypass OS security model, but use cautiously
