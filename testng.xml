@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="automation_Test.Automationtest"/>
+      <class name="automation_Test.AutomationTest"/>
       <class name="try_automation.BaseClass"/>
       <class name="try_automation.Build_Page"/>
        <class name="try_automation.Shell_script"/>
